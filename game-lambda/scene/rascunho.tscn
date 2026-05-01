@@ -2,12 +2,16 @@
 
 [ext_resource type="Texture2D" uid="uid://cn61mwgdwj3ds" path="res://sprites/tilesets/eclipse (maconhha)/tiles.png" id="1_miuya"]
 [ext_resource type="Texture2D" uid="uid://dpwetnpy8bi10" path="res://sprites/tilesets/whismy/tendinhas.png" id="2_dcp8a"]
+[ext_resource type="PackedScene" uid="uid://bchoqdk4vnrbl" path="res://entities/player.tscn" id="3_dcp8a"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tyqm2"]
 texture = ExtResource("1_miuya")
 1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 2:1/0 = 0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 3:1/0 = 0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 6:1/0 = 0
 7:1/0 = 0
 8:1/0 = 0
@@ -22,8 +26,11 @@ texture = ExtResource("1_miuya")
 23:1/0 = 0
 24:1/0 = 0
 1:2/0 = 0
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 2:2/0 = 0
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 3:2/0 = 0
+3:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 6:2/0 = 0
 7:2/0 = 0
 8:2/0 = 0
@@ -40,8 +47,11 @@ texture = ExtResource("1_miuya")
 29:2/0 = 0
 30:2/0 = 0
 1:3/0 = 0
+1:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 2:3/0 = 0
+2:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 3:3/0 = 0
+3:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 5:3/0 = 0
 6:3/0 = 0
 7:3/0 = 0
@@ -60,6 +70,7 @@ texture = ExtResource("1_miuya")
 28:3/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_3i7tw"]
+physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_tyqm2")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_p6ej0"]
@@ -88,3 +99,6 @@ tile_set = SubResource("TileSet_3i7tw")
 [node name="Decoração" type="TileMapLayer" parent="." unique_id=1790267563]
 tile_map_data = PackedByteArray("AAAPAAoAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_mq1cm")
+
+[node name="Player" parent="." unique_id=758609415 instance=ExtResource("3_dcp8a")]
+position = Vector2(24, 158)
